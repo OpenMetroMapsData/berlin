@@ -1,6 +1,6 @@
 This is the data project for the
 [OpenMetroMaps](http://github.com/OpenMetroMaps)
-for Berlin.
+for Berlin, Germany.
 
 # Copyright
 
