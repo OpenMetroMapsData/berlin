@@ -410,6 +410,31 @@
       <stop station="Lichterfelde Süd"/>
       <stop station="Teltow Stadt"/>
     </line>
+    <line circular="false" color="#00844A" name="S26">
+      <stop station="Waidmannslust"/>
+      <stop station="Wittenau"/>
+      <stop station="Wilhelmsruh"/>
+      <stop station="Schönholz"/>
+      <stop station="Wollankstraße"/>
+      <stop station="Bornholmer Straße"/>
+      <stop station="Gesundbrunnen"/>
+      <stop station="Humboldthain"/>
+      <stop station="Nordbahnhof"/>
+      <stop station="Oranienburger Straße"/>
+      <stop station="Friedrichstraße"/>
+      <stop station="Brandenburger Tor"/>
+      <stop station="Potsdamer Platz"/>
+      <stop station="Anhalter Bahnhof"/>
+      <stop station="Yorckstraße"/>
+      <stop station="Südkreuz"/>
+      <stop station="Priesterweg"/>
+      <stop station="Südende"/>
+      <stop station="Lankwitz"/>
+      <stop station="Lichterfelde Ost"/>
+      <stop station="Osdorfer Straße"/>
+      <stop station="Lichterfelde Süd"/>
+      <stop station="Teltow Stadt"/>
+    </line>
     <line circular="false" color="#006CB3" name="S3">
       <stop station="Erkner"/>
       <stop station="Wilhelmshagen"/>
@@ -924,6 +949,9 @@
     <edges line="S25">
       <interval from="Hennigsdorf (bei Berlin)" to="Bornholmer Straße"/>
       <interval from="Priesterweg" to="Teltow Stadt"/>
+    </edges>
+    <edges line="S26">
+      <interval from="Waidmannslust" to="Schönholz"/>
     </edges>
     <edges line="S3"/>
     <edges line="S41"/>
