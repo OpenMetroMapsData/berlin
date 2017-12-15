@@ -435,6 +435,12 @@
       <stop station="Savignyplatz"/>
       <stop station="Charlottenburg"/>
       <stop station="Westkreuz"/>
+      <stop station="Messe Süd (Eichkamp)"/>
+      <stop station="Heerstraße"/>
+      <stop station="Olympiastadion"/>
+      <stop station="Pichelsberg"/>
+      <stop station="Stresow"/>
+      <stop station="Spandau"/>
     </line>
     <line circular="true" color="#A74B38" name="S41">
       <stop station="Gesundbrunnen"/>
@@ -573,12 +579,6 @@
       <stop station="Savignyplatz"/>
       <stop station="Charlottenburg"/>
       <stop station="Westkreuz"/>
-      <stop station="Messe Süd (Eichkamp)"/>
-      <stop station="Heerstraße"/>
-      <stop station="Olympiastadion"/>
-      <stop station="Pichelsberg"/>
-      <stop station="Stresow"/>
-      <stop station="Spandau"/>
     </line>
     <line circular="false" color="#7B6DAC" name="S7">
       <stop station="Potsdam Hbf"/>
@@ -673,15 +673,25 @@
       <stop station="Grünau"/>
     </line>
     <line circular="false" color="#973050" name="S9">
-      <stop station="Pankow"/>
-      <stop station="Bornholmer Straße"/>
-      <stop station="Schönhauser Allee"/>
-      <stop station="Prenzlauer Allee"/>
-      <stop station="Greifswalder Straße"/>
-      <stop station="Landsberger Allee"/>
-      <stop station="Storkower Straße"/>
-      <stop station="Frankfurter Allee"/>
-      <stop station="Ostkreuz"/>
+      <stop station="Spandau"/>
+      <stop station="Stresow"/>
+      <stop station="Pichelsberg"/>
+      <stop station="Olympiastadion"/>
+      <stop station="Heerstraße"/>
+      <stop station="Messe Süd (Eichkamp)"/>
+      <stop station="Westkreuz"/>
+      <stop station="Charlottenburg"/>
+      <stop station="Savignyplatz"/>
+      <stop station="Zoologischer Garten"/>
+      <stop station="Tiergarten"/>
+      <stop station="Bellevue"/>
+      <stop station="Hauptbahnhof"/>
+      <stop station="Friedrichstraße"/>
+      <stop station="Hackescher Markt"/>
+      <stop station="Alexanderplatz"/>
+      <stop station="Jannowitzbrücke"/>
+      <stop station="Ostbahnhof"/>
+      <stop station="Warschauer Straße"/>
       <stop station="Treptower Park"/>
       <stop station="Plänterwald"/>
       <stop station="Baumschulenweg"/>
