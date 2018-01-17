@@ -32,7 +32,10 @@ import java.util.Map;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 
+import org.openmetromaps.maps.Edges;
+import org.openmetromaps.maps.Interval;
 import org.openmetromaps.maps.MapModel;
+import org.openmetromaps.maps.MapView;
 import org.openmetromaps.maps.model.Station;
 import org.openmetromaps.maps.xml.DesktopXmlModelReader;
 import org.openmetromaps.maps.xml.XmlModel;
@@ -109,8 +112,29 @@ public class DeriveNickNameMap
 			nameToStation.put(station.getName(), station);
 		}
 
+		Map<String, String> replacements = new HashMap<>();
+		for (NickNameDef def : defs) {
+			replacements.put(def.name, def.nickName);
+		}
+
 		for (NickNameDef def : defs) {
 			rename(def.name, def.nickName);
+		}
+
+		for (MapView view : model.getViews()) {
+			List<Edges> allEdges = view.getEdges();
+			for (Edges edges : allEdges) {
+				for (Interval interval : edges.getIntervals()) {
+					String from = interval.getFrom();
+					String to = interval.getTo();
+					if (replacements.containsKey(from)) {
+						interval.setFrom(replacements.get(from));
+					}
+					if (replacements.containsKey(to)) {
+						interval.setTo(replacements.get(to));
+					}
+				}
+			}
 		}
 
 		// Write map to output file
