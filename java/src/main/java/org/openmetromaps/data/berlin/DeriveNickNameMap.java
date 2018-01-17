@@ -38,7 +38,6 @@ import org.openmetromaps.maps.xml.XmlModelWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.topobyte.system.utils.SystemPaths;
 import de.topobyte.xml.domabstraction.iface.ParsingException;
 
 public class DeriveNickNameMap
@@ -52,9 +51,9 @@ public class DeriveNickNameMap
 	public static void main(String[] args) throws ParsingException, IOException,
 			ParserConfigurationException, TransformerException
 	{
-		Path mainDir = SystemPaths.CWD.getParent();
-		Path fileInput = mainDir.resolve("schematic.xml");
-		Path fileOutput = mainDir.resolve("nicknames.xml");
+		Path repo = Util.repoDir();
+		Path fileInput = repo.resolve("schematic.xml");
+		Path fileOutput = repo.resolve("nicknames.xml");
 
 		InputStream input = Files.newInputStream(fileInput);
 		XmlModel xmlModel = DesktopXmlModelReader.read(input);

@@ -17,34 +17,21 @@
 
 package org.openmetromaps.data.berlin;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
+import java.nio.file.Paths;
 
-import org.openmetromaps.maps.xml.DesktopXmlModelReader;
-import org.openmetromaps.maps.xml.XmlModel;
-import org.openmetromaps.maps.xml.XmlStation;
+import de.topobyte.system.utils.SystemPaths;
 
-import de.topobyte.xml.domabstraction.iface.ParsingException;
-
-public class ListStations
+public class Util
 {
 
-	public static void main(String[] args) throws ParsingException, IOException
+	public static Path repoDir()
 	{
-		Path repo = Util.repoDir();
-		Path file = repo.resolve("schematic.xml");
+		String repoPath = System.getProperty("repo");
+		Path repoDir = repoPath != null ? Paths.get(repoPath)
+				: SystemPaths.CWD.getParent();
 
-		InputStream input = Files.newInputStream(file);
-		XmlModel xmlModel = DesktopXmlModelReader.read(input);
-		input.close();
-
-		List<XmlStation> stations = xmlModel.getStations();
-		for (XmlStation station : stations) {
-			System.out.println(station.getName());
-		}
+		return repoDir;
 	}
 
 }
