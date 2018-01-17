@@ -4,7 +4,7 @@ Kottbusser Tor:                   Kotti
 Schlesisches Tor:                 Schlesi
 Görlitzer Bahnhof:                Görli
 Kurt-Schumacher-Platz:            Kurtschi
-Kurfürstendamm:                   Kudamm
+Kurfürstendamm:                   Ku'damm
 Nollendorfplatz:                  Nolle
 Wittenbergplatz:                  Witte
 Theodor-Heuss-Platz:              Theo
