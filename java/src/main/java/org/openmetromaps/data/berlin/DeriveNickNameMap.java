@@ -85,6 +85,9 @@ public class DeriveNickNameMap
 			if (line == null) {
 				break;
 			}
+			if (line.trim().isEmpty()) {
+				continue;
+			}
 			List<String> parts = splitter.splitToList(line);
 			String name = parts.get(0);
 			String nickName = parts.get(1);
