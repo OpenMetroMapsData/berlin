@@ -12,6 +12,7 @@ Schöneweide:                      Schweineöde
 Betriebsbahnhof Schöneweide:      Betriebsbahnhof Schweineöde
 Hohenschönhausen:                 Hohenschöngrünkohl
 Königs Wusterhausen:              KW
+Ostkreuz:                         Rostkreuz
 
 Zepernick (bei Bernau):           Zepernick
 Hennigsdorf (bei Berlin):         Hennigsdorf
