@@ -1,3 +1,19 @@
 Alexanderplatz:                   Alex
 Zoologischer Garten:              Zoo
 Kottbusser Tor:                   Kotti
+Schlesisches Tor:                 Schlesi
+Görlitzer Bahnhof:                Görli
+Kurt-Schumacher-Platz:            Kurtschi
+Kurfürstendamm:                   Kudamm
+Nollendorfplatz:                  Nolle
+Wittenbergplatz:                  Witte
+Theodor-Heuss-Platz:              Theo
+Schöneweide:                      Schweineöde
+Betriebsbahnhof Schöneweide:      Betriebsbahnhof Schweineöde
+Hohenschönhausen:                 Hohenschöngrünkohl
+Königs Wusterhausen:              KW
+
+Zepernick (bei Bernau):           Zepernick
+Hennigsdorf (bei Berlin):         Hennigsdorf
+Hohen Neuendorf (b Berlin):       Hohen Neuendorf
+Blankenfelde (Kr Teltow-Fläming): Blankenfelde
