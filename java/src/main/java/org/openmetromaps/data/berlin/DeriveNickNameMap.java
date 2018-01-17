@@ -22,21 +22,32 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 
 import org.openmetromaps.maps.MapModel;
+import org.openmetromaps.maps.model.Station;
 import org.openmetromaps.maps.xml.DesktopXmlModelReader;
 import org.openmetromaps.maps.xml.XmlModel;
 import org.openmetromaps.maps.xml.XmlModelConverter;
 import org.openmetromaps.maps.xml.XmlModelWriter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.topobyte.system.utils.SystemPaths;
 import de.topobyte.xml.domabstraction.iface.ParsingException;
 
 public class DeriveNickNameMap
 {
+
+	final static Logger logger = LoggerFactory
+			.getLogger(DeriveNickNameMap.class);
+
+	private static Map<String, Station> nameToStation = new HashMap<>();
 
 	public static void main(String[] args) throws ParsingException, IOException,
 			ParserConfigurationException, TransformerException
@@ -52,13 +63,30 @@ public class DeriveNickNameMap
 		XmlModelConverter converter = new XmlModelConverter();
 		MapModel model = converter.convert(xmlModel);
 
-		// TODO: rename some stations
+		List<Station> stations = model.getData().stations;
+		for (Station station : stations) {
+			nameToStation.put(station.getName(), station);
+		}
+
+		rename("Alexanderplatz", "Alex");
+		rename("Zoologischer Garten", "Zoo");
+		rename("Kottbusser Tor", "Kotti");
 
 		XmlModelWriter writer = new XmlModelWriter();
 
 		OutputStream output = Files.newOutputStream(fileOutput);
 		writer.write(output, model.getData(), model.getViews());
 		output.close();
+	}
+
+	private static void rename(String name, String newName)
+	{
+		Station station = nameToStation.get(name);
+		if (station == null) {
+			logger.warn(String.format("Station not found: '%s'", name));
+			return;
+		}
+		station.setName(newName);
 	}
 
 }
