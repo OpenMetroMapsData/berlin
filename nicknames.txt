@@ -1,0 +1,3 @@
+Alexanderplatz:                   Alex
+Zoologischer Garten:              Zoo
+Kottbusser Tor:                   Kotti

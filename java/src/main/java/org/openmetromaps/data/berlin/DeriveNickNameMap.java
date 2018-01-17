@@ -17,11 +17,14 @@
 
 package org.openmetromaps.data.berlin;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +41,8 @@ import org.openmetromaps.maps.xml.XmlModelWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.common.base.Splitter;
+
 import de.topobyte.xml.domabstraction.iface.ParsingException;
 
 public class DeriveNickNameMap
@@ -46,6 +51,20 @@ public class DeriveNickNameMap
 	final static Logger logger = LoggerFactory
 			.getLogger(DeriveNickNameMap.class);
 
+	static class NickNameDef
+	{
+
+		private String name;
+		private String nickName;
+
+		public NickNameDef(String name, String nickName)
+		{
+			this.name = name;
+			this.nickName = nickName;
+		}
+
+	}
+
 	private static Map<String, Station> nameToStation = new HashMap<>();
 
 	public static void main(String[] args) throws ParsingException, IOException,
@@ -53,8 +72,27 @@ public class DeriveNickNameMap
 	{
 		Path repo = Util.repoDir();
 		Path fileInput = repo.resolve("schematic.xml");
+		Path fileDef = repo.resolve("nicknames.txt");
 		Path fileOutput = repo.resolve("nicknames.xml");
 
+		// Read nicknames from text file
+		List<NickNameDef> defs = new ArrayList<>();
+		BufferedReader reader = Files.newBufferedReader(fileDef,
+				StandardCharsets.UTF_8);
+		Splitter splitter = Splitter.on(":").trimResults();
+		while (true) {
+			String line = reader.readLine();
+			if (line == null) {
+				break;
+			}
+			List<String> parts = splitter.splitToList(line);
+			String name = parts.get(0);
+			String nickName = parts.get(1);
+			defs.add(new NickNameDef(name, nickName));
+		}
+		reader.close();
+
+		// Read original map
 		InputStream input = Files.newInputStream(fileInput);
 		XmlModel xmlModel = DesktopXmlModelReader.read(input);
 		input.close();
@@ -62,15 +100,17 @@ public class DeriveNickNameMap
 		XmlModelConverter converter = new XmlModelConverter();
 		MapModel model = converter.convert(xmlModel);
 
+		// Rename stations
 		List<Station> stations = model.getData().stations;
 		for (Station station : stations) {
 			nameToStation.put(station.getName(), station);
 		}
 
-		rename("Alexanderplatz", "Alex");
-		rename("Zoologischer Garten", "Zoo");
-		rename("Kottbusser Tor", "Kotti");
+		for (NickNameDef def : defs) {
+			rename(def.name, def.nickName);
+		}
 
+		// Write map to output file
 		XmlModelWriter writer = new XmlModelWriter();
 
 		OutputStream output = Files.newOutputStream(fileOutput);
@@ -86,7 +126,7 @@ public class DeriveNickNameMap
 			return;
 		}
 		System.out.println(
-				String.format("Replacing '%s' with '%s", name, newName));
+				String.format("Replacing '%s' with '%s'", name, newName));
 		station.setName(newName);
 	}
 
