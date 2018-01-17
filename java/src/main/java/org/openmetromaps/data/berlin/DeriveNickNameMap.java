@@ -86,6 +86,8 @@ public class DeriveNickNameMap
 			logger.warn(String.format("Station not found: '%s'", name));
 			return;
 		}
+		System.out.println(
+				String.format("Replacing '%s' with '%s", name, newName));
 		station.setName(newName);
 	}
 
