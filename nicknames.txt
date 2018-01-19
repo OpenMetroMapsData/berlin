@@ -13,6 +13,7 @@ Betriebsbahnhof Schöneweide:      Betriebsbahnhof Schweineöde
 Hohenschönhausen:                 Hohenschöngrünkohl
 Königs Wusterhausen:              KW
 Ostkreuz:                         Rostkreuz
+Leopoldplatz:                     Leo
 
 Zepernick (bei Bernau):           Zepernick
 Hennigsdorf (bei Berlin):         Hennigsdorf
