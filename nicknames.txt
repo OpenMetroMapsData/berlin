@@ -15,6 +15,7 @@ Königs Wusterhausen:              KW
 Ostkreuz:                         Rostkreuz
 Leopoldplatz:                     Leo
 Johannisthaler Chaussee:          Gropi
+Gesundbrunnen:                    Plumpe
 
 Zepernick (bei Bernau):           Zepernick
 Hennigsdorf (bei Berlin):         Hennigsdorf
