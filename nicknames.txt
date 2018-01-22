@@ -16,6 +16,8 @@ Ostkreuz:                         Rostkreuz
 Leopoldplatz:                     Leo
 Johannisthaler Chaussee:          Gropi
 Gesundbrunnen:                    Plumpe
+Paracelsus Bad:                   Para
+Residenzstraße:                   Resi
 
 Zepernick (bei Bernau):           Zepernick
 Hennigsdorf (bei Berlin):         Hennigsdorf
