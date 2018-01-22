@@ -18,6 +18,11 @@ Johannisthaler Chaussee:          Gropi
 Gesundbrunnen:                    Plumpe
 Paracelsus-Bad:                   Para
 Residenzstraße:                   Resi
+Friedrich-Wilhelm-Platz:          Fritz-Willi
+Richard-Wagner-Platz:             Richi
+Savignyplatz:                     Viny
+Walther-Schreiber-Platz:          Waschplatz
+Rüdesheimer Platz:                Rüdi
 
 Zepernick (bei Bernau):           Zepernick
 Hennigsdorf (bei Berlin):         Hennigsdorf
