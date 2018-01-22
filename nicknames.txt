@@ -23,6 +23,7 @@ Richard-Wagner-Platz:             Richi
 Savignyplatz:                     Viny
 Walther-Schreiber-Platz:          Waschplatz
 Rüdesheimer Platz:                Rüdi
+Hermannplatz:                     Hermi
 
 Zepernick (bei Bernau):           Zepernick
 Hennigsdorf (bei Berlin):         Hennigsdorf
