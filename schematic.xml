@@ -770,6 +770,15 @@
       <stop station="Ruhleben"/>
     </line>
     <line circular="false" color="#16A696" name="U3">
+      <stop station="Warschauer Straße"/>
+      <stop station="Schlesisches Tor"/>
+      <stop station="Görlitzer Bahnhof"/>
+      <stop station="Kottbusser Tor"/>
+      <stop station="Prinzenstraße"/>
+      <stop station="Hallesches Tor"/>
+      <stop station="Möckernbrücke"/>
+      <stop station="Gleisdreieck"/>
+      <stop station="Kurfürstenstraße"/>
       <stop station="Nollendorfplatz"/>
       <stop station="Wittenbergplatz"/>
       <stop station="Augsburger Straße"/>
