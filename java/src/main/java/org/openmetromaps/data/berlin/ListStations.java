@@ -35,7 +35,7 @@ public class ListStations
 	public static void main(String[] args) throws ParsingException, IOException
 	{
 		Path repo = Util.repoDir();
-		Path file = repo.resolve("schematic.xml");
+		Path file = repo.resolve("schematic.omm");
 
 		InputStream input = Files.newInputStream(file);
 		XmlModel xmlModel = DesktopXmlModelReader.read(input);

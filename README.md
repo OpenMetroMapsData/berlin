@@ -38,10 +38,10 @@ To view any of the maps run this (you need to have the
 executable](https://github.com/OpenMetroMaps/OpenMetroMaps/blob/master/java/README.md)
 on your `PATH`):
 
-    openmetromaps-cli map-viewer --input schematic.xml
-    openmetromaps-cli map-viewer --input geographic.xml
-    openmetromaps-cli map-viewer --input nicknames.xml
+    openmetromaps-cli map-viewer --input schematic.omm
+    openmetromaps-cli map-viewer --input geographic.omm
+    openmetromaps-cli map-viewer --input nicknames.omm
 
 To start editing a map, run this:
 
-    openmetromaps-cli map-editor --input schematic.xml
+    openmetromaps-cli map-editor --input schematic.omm

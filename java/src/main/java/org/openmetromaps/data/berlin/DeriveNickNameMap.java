@@ -74,9 +74,9 @@ public class DeriveNickNameMap
 			ParserConfigurationException, TransformerException
 	{
 		Path repo = Util.repoDir();
-		Path fileInput = repo.resolve("schematic.xml");
+		Path fileInput = repo.resolve("schematic.omm");
 		Path fileDef = repo.resolve("nicknames.txt");
-		Path fileOutput = repo.resolve("nicknames.xml");
+		Path fileOutput = repo.resolve("nicknames.omm");
 
 		// Read nicknames from text file
 		List<NickNameDef> defs = new ArrayList<>();
