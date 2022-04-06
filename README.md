@@ -22,7 +22,7 @@ To set up the tools within this project, change to the `java` directory
 and build the executables:
 
     cd java
-    gradle clean create
+    ./gradlew clean create
     cd ..
 
 Afterwards you can list the stations like this:
