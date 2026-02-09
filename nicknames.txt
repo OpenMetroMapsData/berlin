@@ -26,5 +26,5 @@ Rüdesheimer Platz:                Rüdi
 Hermannplatz:                     Hermi
 
 Zepernick (bei Bernau):           Zepernick
-Hennigsdorf (bei Berlin):         Hennigsdorf
+Hennigsdorf:         Hennigsdorf
 Blankenfelde (Kr Teltow-Fläming): Blankenfelde
