@@ -567,6 +567,8 @@
       <stop station="Königs Wusterhausen"/>
     </line>
     <line circular="false" color="#C48946" name="S47">
+      <stop station="Südkreuz"/>
+      <stop station="Tempelhof"/>
       <stop station="Hermannstraße"/>
       <stop station="Neukölln"/>
       <stop station="Köllnische Heide"/>
