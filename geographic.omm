@@ -64,6 +64,7 @@
     <station lat="52.511775" lon="13.322120" name="Ernst-Reuter-Platz"/>
     <station lat="52.490280" lon="13.314403" name="Fehrbelliner Platz"/>
     <station lat="52.463827" lon="13.332886" name="Feuerbachstraße"/>
+    <station lat="52.364692" lon="13.509596" name="Flughafen BER"/>
     <station lat="52.514873" lon="13.474635" name="Frankfurter Allee"/>
     <station lat="52.515805" lon="13.453992" name="Frankfurter Tor"/>
     <station lat="52.564527" lon="13.363845" name="Franz-Neumann-Platz"/>
@@ -290,6 +291,7 @@
     <station lat="52.421104" lon="13.179253" name="Wannsee"/>
     <station lat="52.505869" lon="13.450470" name="Warschauer Straße"/>
     <station lat="52.572477" lon="13.504406" name="Wartenberg"/>
+    <station lat="52.368440" lon="13.463545" name="Waßmannsdorf"/>
     <station lat="52.543031" lon="13.366270" name="Wedding"/>
     <station lat="52.525519" lon="13.404932" name="Weinmeisterstraße"/>
     <station lat="52.518439" lon="13.284297" name="Westend"/>
@@ -726,6 +728,8 @@
       <stop station="Altglienicke"/>
       <stop station="Grünbergallee"/>
       <stop station="Schönefeld"/>
+      <stop station="Waßmannsdorf"/>
+      <stop station="Flughafen BER"/>
     </line>
     <line circular="false" color="#53B147" name="U1">
       <stop station="Uhlandstraße"/>
@@ -1052,6 +1056,7 @@
     <station name="Ernst-Reuter-Platz" x="322.814860" y="476.580634"/>
     <station name="Fehrbelliner Platz" x="314.559834" y="514.352673"/>
     <station name="Feuerbachstraße" x="334.331461" y="560.811815"/>
+    <station name="Flughafen BER" x="523.353897" y="734.684392"/>
     <station name="Frankfurter Allee" x="485.963140" y="471.135158"/>
     <station name="Frankfurter Tor" x="463.880919" y="469.496870"/>
     <station name="Franz-Neumann-Platz" x="367.448909" y="383.803931"/>
@@ -1278,6 +1283,7 @@
     <station name="Wannsee" x="169.987235" y="635.786879"/>
     <station name="Warschauer Straße" x="460.113367" y="486.960779"/>
     <station name="Wartenberg" x="517.809761" y="369.812329"/>
+    <station name="Waßmannsdorf" x="474.093067" y="728.118067"/>
     <station name="Wedding" x="370.042979" y="421.623123"/>
     <station name="Weinmeisterstraße" x="411.400477" y="452.419338"/>
     <station name="Westend" x="282.354857" y="464.866584"/>
